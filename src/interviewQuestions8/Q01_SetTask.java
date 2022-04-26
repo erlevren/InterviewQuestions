@@ -36,20 +36,15 @@ public class Q01_SetTask {
         Set<Character>characterSet=new HashSet<>();
         karakterleriSeteEkle(characterSet,'A','B','R','r','q');
         System.out.println("Karakterler sete eklendikten sonra = " + characterSet);
-
     }
-
     private static void karakterleriSeteEkle(Set<Character> characterSet, Character ... chars) {
         for (int i = 0; i < chars.length; i++) {
             characterSet.add(chars[i]);
         }
-
     }
-
     private static void arrayListdenSeteDonustur(ArrayList<Integer> arrlist, Set<Integer> set) {
         for (Integer each:arrlist) {
             set.add(each);
         }
-
     }
 }
